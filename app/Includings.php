@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/Controllers/BaseController.php';
 require_once __DIR__ . '/Controllers/ErrorResponseController.php';
+require_once __DIR__ . '/Controllers/LandingController.php';
 
 require_once __DIR__ . '/Core/Router.php';
 
