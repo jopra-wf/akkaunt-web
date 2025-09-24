@@ -1,0 +1,20 @@
+@import url(./m3-theme-colors/dark-hc.css);
+@import url(./m3-theme-colors/dark-mc.css);
+@import url(./m3-theme-colors/dark.css);
+@import url(./m3-theme-colors/light-hc.css);
+@import url(./m3-theme-colors/light-mc.css);
+@import url(./m3-theme-colors/light.css);
+
+
+@import url(./borders.css);
+@import url(./buttons.css);
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./../fonts/outfit.ttf')  format('truetype')
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+}

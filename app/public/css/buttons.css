@@ -1,0 +1,6 @@
+.btn-primary {
+    border: 1px solid whitesmoke;
+    padding: .4rem .8rem;
+    background-color: transparent;
+    border-radius: .4rem;
+}

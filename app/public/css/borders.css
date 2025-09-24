@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    background-color: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+}
+
+.header {
+    background-color: var(--md-sys-color-primary);
+    color:  var(--md-sys-color-on-primary);
+    padding: .8rem 1.6rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
