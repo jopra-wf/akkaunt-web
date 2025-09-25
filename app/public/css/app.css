@@ -17,4 +17,7 @@
 html {
     font-family: 'Outfit', sans-serif;
     font-size: 1.4rem;
+    height: 100%;
+    color: var(--md-sys-color-on-surface);
+    background-color: var(--md-sys-color-primary-container);
 }

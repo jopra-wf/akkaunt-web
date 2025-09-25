@@ -1,6 +1,39 @@
-.btn-primary {
-    border: 1px solid whitesmoke;
+button {
+    height: 1.8rem;
     padding: .4rem .8rem;
+    border-radius: .9rem;
+    border: 1.5px solid var(--md-sys-color-primary);
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    transition-duration: .2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: .4rem;
+    align-items: center;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:focus {
+    border: 1.5px solid var(--md-sys-color-on-primary);
+    box-shadow: var(--md-sys-color-primary) 0 0 0 2px;
+}
+
+button.secondary {
+    border: 1.5px solid var(--md-sys-color-primary);
     background-color: transparent;
-    border-radius: .4rem;
+    color: var(--md-sys-color-primary);
+}
+
+button.secondary:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+button.secondary:focus {
+    border: 1.5px solid var(--md-sys-color-on-primary);
 }
