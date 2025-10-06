@@ -11,6 +11,7 @@ class LandingController extends BaseController
             'title' => 'AKKAUNT',
         ];
         require_once __DIR__.'/../view/header-landing.php';
+        require_once __DIR__.'/../view/landing-index.php';
         require_once __DIR__.'/../view/footer-landing.php';
     }
 }

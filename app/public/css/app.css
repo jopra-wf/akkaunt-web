@@ -8,6 +8,7 @@
 
 @import url(./borders.css);
 @import url(./buttons.css);
+@import url(./inputs.css);
 
 @font-face {
     font-family: 'Outfit';
@@ -16,8 +17,30 @@
 
 html {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.4rem;
+    font-size: 18px;
     height: 100%;
     color: var(--md-sys-color-on-surface);
     background-color: var(--md-sys-color-primary-container);
 }
+
+/* Loader section */
+.loader {
+  width: 32px;
+  height: 32px;
+  border: 5px solid;
+  border-color: var(--md-sys-color-primary) transparent;
+  display: inline-block;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+/* End loader section */
