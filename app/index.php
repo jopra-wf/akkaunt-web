@@ -3,13 +3,21 @@ require_once 'Includings.php';
 
 use Controllers\ErrorResponseController;
 use Controllers\LandingController;
+use Controllers\RegistrationController;
 use Core\Router;
 
 try {
     $router = new Router();
+    
     $landingController = new LandingController();
-
     $router->get('/', [$landingController, 'Landing']);
+
+    $registrationController = new RegistrationController();
+    $router->get('/register', [$registrationController, 'Landing']);
+    $router->get('/register/onboarding', [$registrationController, 'Done']);
+    $router->post('/register/create-account', [$registrationController, 'EmailPasswordInput']);
+    $router->post('/register/verify-email', [$registrationController, 'EmailVerification']);
+    $router->post('/register/continue', [$registrationController, 'Continue']);
 
     // Dispatch the current request
     $router->dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);

@@ -4,16 +4,16 @@ body {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-    height: calc(100% - 4.0rem);
+    height: calc(100% - 128px);
 }
 
 .header {
     background-color: var(--md-sys-color-primary-container);
-    height: 2.4rem;
-    padding: .8rem 1.6rem;
+    height: 102px;
+    padding: 16px 24px;
     display: flex;
     flex-direction: row;
-    width: calc(100% - 3.2rem);
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -24,15 +24,16 @@ body {
 .page-content {
     color: var(--md-sys-color-on-surface);
     background-color: var(--md-sys-color-surface);
-    margin: .8rem;
-    padding: .8rem;
-    border-radius: 1.6rem;
+    margin: 16px;
+    padding: 32px;
+    width: calc(100% - 32px);
+    border-radius: 36px;
 }
 
 .page-content div.hero-img {
-    height: 12.8rem;
+    height: 236px;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 12px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
