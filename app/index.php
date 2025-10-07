@@ -3,6 +3,7 @@ require_once 'Includings.php';
 
 use Controllers\ErrorResponseController;
 use Controllers\LandingController;
+use Controllers\DashboardController;
 use Controllers\RegistrationController;
 use Core\Router;
 
@@ -18,6 +19,11 @@ try {
     $router->post('/register/create-account', [$registrationController, 'EmailPasswordInput']);
     $router->post('/register/verify-email', [$registrationController, 'EmailVerification']);
     $router->post('/register/continue', [$registrationController, 'Continue']);
+
+
+    $dashboardController = new DashboardController();
+    $router->get('/dashboard', [$dashboardController, 'Index']);
+    $router->get('/inbox', [$dashboardController, 'Inbox']);
 
     // Dispatch the current request
     $router->dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);
