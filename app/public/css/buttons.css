@@ -42,3 +42,57 @@ button.secondary:hover {
 button.secondary:focus {
     border: 1.5px solid var(--md-sys-color-on-primary);
 }
+
+button.dashboard-nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px 8px;
+    height: 84px;
+    width: 84px;
+}
+
+button.dashboard-nav-btn:hover {
+    filter: brightness(1);
+}
+
+button.dashboard-nav-btn:focus {
+    border: 1px solid transparent;
+    box-shadow: 0;
+}
+
+button.dashboard-nav-btn div {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    height: 32px;
+    width: 100%;
+    margin: 0 16px;
+    border-radius: 16px;
+    transition-duration: .2s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button.dashboard-nav-btn:hover div {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    filter: brightness(1.2);
+}
+
+button.dashboard-nav-btn:focus div {
+    border: 1.5px solid var(--md-sys-color-on-primary);
+    box-shadow: var(--md-sys-color-primary) 0 0 0 2px;
+    background-color: var(--md-sys-color-primary-container);
+}
+
+button.dashboard-nav-btn.selected div {
+    border: 1.5px solid var(--md-sys-color-on-primary);
+    box-shadow: var(--md-sys-color-primary) 0 0 0 2px;
+    background-color: var(--md-sys-color-primary-container);
+}
+
+button.dashboard-nav-btn span {
+    font-weight: normal;
+    font-size: 12px;
+}
