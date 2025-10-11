@@ -5,10 +5,10 @@
     </div>
     <div class="page-content w-full" style="max-width: 500px;height:100%">
         <form id="frm_userName" method="POST" action="<?= Helpers\UrlHelper::getCurrentHostAddress().'/register/create-account' ?>">
-            <input type="text" name="csrfToken" class="hidden" value="<?= $_SESSION['CSRF_TOKEN'] ?? '' ?>" />
+            <input id="csrf-token-input" type="text" name="csrfToken" class="hidden" value="<?= $_SESSION['CSRF_TOKEN'] ?? '' ?>" />
             <div>
                 <b>Mein Benutzername ist</b>
-                <input id="txt_username" class="mt-4 w-full" type="text" name="userName" required />
+                <input id="txt_username" class="mt-4 w-full" type="text" name="userName" value="<?= $_SESSION['username'] ?? '' ?>" required />
                 <div id="err_username" class="flex flex-row items-center gap-4 mt-2 hidden">
                     <img alt="error" src="<?= Helpers\UrlHelper::GetCurrentHostAddress().'/public/icons/light/ic_error_24dp.svg' ?>"></script>
                     <b style="color:var(--md-sys-color-error)" class="text-sm">Ein valider Benutzername kann nur Buchstaben, Zahlen, Punkte, Binde- und Unterstriche enthalten und sind 3-30 Zeichen lang.</b>

@@ -5,11 +5,11 @@
     </div>
     <div class="page-content w-full" style="max-width: 500px;height:100%">
         <form method="POST" action="<?= Helpers\UrlHelper::getCurrentHostAddress().'/register/verify-email' ?>">
-            <input type="text" name="csrfToken" class="hidden" value="<?= $_SESSION['CSRF_TOKEN'] ?? '' ?>" />
+            <input id="csrf-token-input" type="text" name="csrfToken" class="hidden" value="<?= $_SESSION['CSRF_TOKEN'] ?? '' ?>" />
 
             <div>
                 <b>Meine E-Mail-Adresse ist</b>
-                <input class="mt-4 w-full" type="text" name="email" value="<?= $_SESSION['email'] ?? '' ?>" />
+                <input id="txt_email" class="mt-4 w-full" type="text" name="email" value="<?= $_SESSION['email'] ?? '' ?>" />
             </div>
 
             <div class="mt-4">
@@ -28,3 +28,4 @@
         </form>
     </div>
 </div>
+<script src="<?= Helpers\UrlHelper::GetCurrentHostAddress().'/public/js/registration/registration-script.js' ?>"></script>

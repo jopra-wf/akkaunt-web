@@ -5,6 +5,7 @@ require_once __DIR__ . '/Controllers/DashboardController.php';
 require_once __DIR__ . '/Controllers/ErrorResponseController.php';
 require_once __DIR__ . '/Controllers/LandingController.php';
 require_once __DIR__ . '/Controllers/RegistrationController.php';
+require_once __DIR__ . '/Controllers/PrefillController.php';
 
 require_once __DIR__ . '/Core/Router.php';
 

@@ -1,6 +1,7 @@
 <?php
 require_once 'Includings.php';
 
+use Controllers\PrefillController;
 use Controllers\ErrorResponseController;
 use Controllers\LandingController;
 use Controllers\DashboardController;
@@ -9,6 +10,10 @@ use Core\Router;
 
 try {
     $router = new Router();
+
+    $prefillController = new PrefillController();
+    $router->post('/ajax/sessionValue', [$prefillController, 'AddSessionValue']);
+    $router->delete('/ajax/sessionValue', [$prefillController, 'RemoveSessionValue']);
     
     $landingController = new LandingController();
     $router->get('/', [$landingController, 'Landing']);
